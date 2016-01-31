@@ -3,19 +3,19 @@
 		<file version="0.6">
 			TAMods.dll
 		</file>
-		<file>
+		<file version="0.6">
 			Config Tool/TAModsConfigurationTool.exe
 		</file>
-		<file>
+		<file version="1">
 			Config Tool/NLua.dll
 		</file>
-		<file>
+		<file version="1">
 			Config Tool/KeraLua.dll
 		</file>
-		<file>
+		<file version="1">
 			Config Tool/x86/lua52.dll
 		</file>
-		<file>
+		<file version="1">
 			Config Tool/x64/lua52.dll
 		</file>
 	</files>
