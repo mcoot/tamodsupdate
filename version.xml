@@ -3,6 +3,9 @@
 		<file version="0.6">
 			TAMods.dll
 		</file>
+		<file version="1">
+			KeraLua.dll
+		</file>
 		<file version="0.6">
 			Config Tool/TAModsConfigurationTool.exe
 		</file>
