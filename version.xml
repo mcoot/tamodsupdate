@@ -7,19 +7,19 @@
 			KeraLua.dll
 		</file>
 		<file version="0.6">
-			Config Tool/TAModsConfigurationTool.exe
+			Config/TAModsConfigurationTool.exe
 		</file>
 		<file version="1">
-			Config Tool/NLua.dll
+			Config/NLua.dll
 		</file>
 		<file version="1">
-			Config Tool/KeraLua.dll
+			Config/KeraLua.dll
 		</file>
 		<file version="1">
-			Config Tool/x86/lua52.dll
+			Config/x86/lua52.dll
 		</file>
 		<file version="1">
-			Config Tool/x64/lua52.dll
+			Config/x64/lua52.dll
 		</file>
 	</files>
 </TAMods>
