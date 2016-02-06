@@ -19,7 +19,7 @@
 			Config/x64/lua52.dll
 		</file>
 		<file version="1">
-			!CONFIG/x64/test.lua
+			!CONFIG/test.lua
 		</file>
 	</files>
 </TAMods>
