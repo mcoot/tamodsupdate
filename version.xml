@@ -21,5 +21,8 @@
 		<file version="1">
 			!CONFIG/test.lua
 		</file>
+		<file version="1">
+			!CONFIG/something/test2.lua
+		</file>
 	</files>
 </TAMods>
