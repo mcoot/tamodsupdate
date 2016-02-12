@@ -240,6 +240,6 @@
 <file version="1">Config/x64/lua52.dll</file>
 <file version="1">Config/x86/lua52.dll</file>
 <file version="0.62">Config/TAModsConfigurationTool.exe</file>
-<file version="0.62">TAMods.dll</file>
+<file version="0.621">TAMods.dll</file>
 	</files>
 </TAMods>
