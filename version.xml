@@ -2,7 +2,7 @@
 	<files channel="stable">
 <file version="0.6">!CONFIG/examples/basic_damage_numbers.lua</file>
 <file version="0.6">!CONFIG/examples/custom_projectiles.lua</file>
-<file version="0.6">!CONFIG/examples/Dots.lua</file>
+<file version="0.62">!CONFIG/examples/Dots.lua</file>
 <file version="0.6">!CONFIG/examples/keybindings.lua</file>
 <file version="0.6">!CONFIG/examples/keybindings_routerec.lua</file>
 <file version="0.6">!CONFIG/examples/lol_damage_numbers.lua</file>
@@ -68,6 +68,31 @@
 <file version="0.6">!CONFIG/examples/sounds/kill-ta.wav</file>
 <file version="0.6">!CONFIG/examples/sounds.lua</file>
 <file version="0.6">!CONFIG/examples/static_damage_numbers.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/description.txt</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/colors.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/variables.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/arena_player_spawns.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/arena_round_scores.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/cah_capture_points.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/chat_vgs.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/crosshairs.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/flag_status.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/game_messages.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/game_scores.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/game_timer.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/generator_status.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/healthbars.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/health_energy.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/kda_ping.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/kill_feed.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/kill_message_box.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/rabbit_leaderboard.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/spectators.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/speed_bar.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/vehicle_health_energy.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/widgets/weapon_list.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/hud/_main.lua</file>
+<file version="0.62">!CONFIG/presets/tomatoHud/preset.lua</file>
 <file version="0.6">!CONFIG/presets/potatoHud/description.txt</file>
 <file version="0.6">!CONFIG/presets/potatoHud/hud/colors.lua</file>
 <file version="0.6">!CONFIG/presets/potatoHud/hud/variables.lua</file>
@@ -90,7 +115,7 @@
 <file version="0.6">!CONFIG/presets/potatoHud/hud/widgets/spectators.lua</file>
 <file version="0.6">!CONFIG/presets/potatoHud/hud/widgets/vehicle_health_energy.lua</file>
 <file version="0.6">!CONFIG/presets/potatoHud/hud/widgets/weapon_list.lua</file>
-<file version="0.6">!CONFIG/presets/potatoHud/hud/_main.lua</file>
+<file version="0.62">!CONFIG/presets/potatoHud/hud/_main.lua</file>
 <file version="0.6">!CONFIG/presets/potatoHud/preset.lua</file>
 <file version="0.6">!CONFIG/presets/schreq/audio/airmail.wav</file>
 <file version="0.6">!CONFIG/presets/schreq/audio/artilleryshot.wav</file>
@@ -124,11 +149,11 @@
 <file version="0.6">!CONFIG/presets/schreq/audio/streak4.wav</file>
 <file version="0.6">!CONFIG/presets/schreq/audio/streak5.wav</file>
 <file version="0.6">!CONFIG/presets/schreq/audio/_sounds.lua</file>
-<file version="0.6">!CONFIG/presets/schreq/description.txt</file>
+<file version="0.62">!CONFIG/presets/schreq/description.txt</file>
 <file version="0.6">!CONFIG/presets/schreq/preset.lua</file>
 <file version="0.6">!CONFIG/presets/schreq/settings/_keybinds.lua</file>
 <file version="0.6">!CONFIG/presets/schreq/settings/_mute.lua</file>
-<file version="0.6">!CONFIG/presets/schreq/settings/_settings.lua</file>
+<file version="0.62">!CONFIG/presets/schreq/settings/_settings.lua</file>
 <file version="0.6">!CONFIG/routes/TrCTF-ArxNovena_BE_LHT_Kigabit_(BtF-LeftSetup)_44s.route</file>
 <file version="0.6">!CONFIG/routes/TrCTF-ArxNovena_BE_LHT_Kigabit_(BtF-Over)_34s.route</file>
 <file version="0.6">!CONFIG/routes/TrCTF-ArxNovena_BE_LHT_Kigabit_(BtF-Under)_30s.route</file>
@@ -214,7 +239,7 @@
 <file version="1">Config/NLua.dll</file>
 <file version="1">Config/x64/lua52.dll</file>
 <file version="1">Config/x86/lua52.dll</file>
-<file version="0.6">Config/TAModsConfigurationTool.exe</file>
-<file version="0.6">TAMods.dll</file>
+<file version="0.62">Config/TAModsConfigurationTool.exe</file>
+<file version="0.62">TAMods.dll</file>
 	</files>
 </TAMods>
