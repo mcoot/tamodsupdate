@@ -182,10 +182,11 @@
 <file version="0.63">!CONFIG/presets/EyestrainHUD/hud/widgets/weapon_list.lua</file>
 <file version="0.63">!CONFIG/presets/minHud/description.txt</file>
 <file version="0.63">!CONFIG/presets/minHud/preset.lua</file>
-<file version="0.63">!CONFIG/presets/minHud/hud/_main.lua</file>
+<file version="0.64">!CONFIG/presets/minHud/hud/_main.lua</file>
 <file version="0.63">!CONFIG/presets/minHud/hud/colors.lua</file>
 <file version="0.63">!CONFIG/presets/minHud/hud/variables.lua</file>
-<file version="0.63">!CONFIG/presets/minHud/hud/elements/crosshairs.lua</file>
+<file version="0.64">!CONFIG/presets/minHud/hud/elements/crosshairs.lua</file>
+<file version="0.64">!CONFIG/presets/minHud/hud/elements/stats.lua</file>
 <file version="0.63">!CONFIG/presets/minHud/hud/elements/kda_ping.lua</file>
 <file version="0.63">!CONFIG/presets/minHud/hud/elements/spectators.lua</file>
 <file version="0.63">!CONFIG/presets/minHud/hud/elements/weapon_list.lua</file>
