@@ -108,6 +108,34 @@ function cross_3(x, y, color, size, gap_size)
 	end
 end
 
+function xhair_dot(x, y, color, size)
+	if size == 1 then
+		dot_1x1(x, y, color)
+	elseif size == 2 then
+		dot_2x2(x, y, color)
+	elseif size == 3 then
+		dot_3x3(x, y, color)
+	elseif size == 4 then
+		dot_4x4(x, y, color)
+	elseif size == 5 then
+		dot_5x5(x, y, color)
+	elseif size == 6 then
+		dot_6x6(x, y, color)
+	else
+		dot_7x7(x, y, color)
+	end
+end
+
+function xhair_cross(x, y, color, size, length, gap_size)
+	if size == 1 then
+		cross_1(x, y, color, length, gap_size)
+	elseif size == 2 then
+		cross_2(x, y, color, length, gap_size)
+	else
+		cross_3(x, y, color, length, gap_size)
+	end
+end
+
 function xhair_test()
 	local color = rgb(255, 255, 255)
 	dot_1x1(20, 60, color)
@@ -128,5 +156,3 @@ function xhair_test()
 		cross_3(10 + 3 * i * i, 350, color, i, i / 2)
 	end
 end
-
-console("Preset \"xhair_factory\" loaded")
