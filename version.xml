@@ -8,7 +8,6 @@
 		<file version="0.65">!CONFIG/examples/keybindings_routerec.lua</file>
 		<file version="0.65">!CONFIG/examples/lol_damage_numbers.lua</file>
 		<file version="0.65">!CONFIG/examples/random_route_replay.lua</file>
-		<file version="0.65">!CONFIG/examples/sounds</file>
 		<file version="0.65">!CONFIG/examples/sounds.lua</file>
 		<file version="0.65">!CONFIG/examples/static_damage_numbers.lua</file>
 		<file version="0.6">!CONFIG/examples/sounds/announcer-accuracy-cpma.wav</file>
