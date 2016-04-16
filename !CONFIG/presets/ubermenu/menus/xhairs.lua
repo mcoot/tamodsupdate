@@ -113,7 +113,7 @@ function add_vis_menu(menu)
 end
 
 function reorder_widget(parent, item, up)
-	local selected = parent.parent.selected - 5
+	local selected = parent.parent.selected - 7
 	local toswitch = 0
 	local tmp
 
@@ -129,7 +129,7 @@ function reorder_widget(parent, item, up)
 		ubermenu_xhairs[toswitch] = ubermenu_xhairs[selected]
 		ubermenu_xhairs[selected] = tmp
 		parent:go_parent()
-		parent.parent.selected = toswitch + 5
+		parent.parent.selected = toswitch + 7
 	end
 end
 
@@ -140,6 +140,15 @@ function xhairMenu(parent, m)
 	m:add_item({ title = "Add Dot",       func = add_dot })
 	m:add_item({ title = "Add Rectangle", func = add_rect })
 	m:add_item({ title = "Add Line",      func = add_line })
+	m:add_separator({})
+	local sub = m:add_submenu({ title = "Delete All" })
+		sub:add_item({ title = "No", func = function()
+			sub:go_parent()
+		end })
+		sub:add_item({ title = "Yes", func = function()
+			ubermenu_xhairs = {}
+			sub:go_parent()
+		end })
 	m:add_separator({})
 
 	for i = 1,#ubermenu_xhairs do
