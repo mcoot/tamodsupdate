@@ -1,0 +1,21 @@
+{
+    "news": [
+        {
+            "title": "TribesLauncher Alpha Testing",
+            "date": "22nd April, 2018",
+            "body": "The TribesLauncher client has hit alpha! There's still a _lot_ of development work to go, but it is now able to perform the basic functionality of updating and injecting TAMods.\n\n- mcoot"
+        }
+    ],
+    "community": [
+        {
+            "kind": "discord",
+            "name": "Australian Tribes Discord",
+            "serverId": "413598358738042890"
+        },
+        {
+            "kind": "reddit",
+            "name": "Tribes Subreddit",
+            "sub": "tribes"
+        }
+    ]
+}
