@@ -38,13 +38,13 @@
 			]
         },
 		{
-			"id": 0,
+			"id": 1,
             "kind": "iframe",
             "name": "Australian Tribes Discord <iframe>",
             "url": "https://discordapp.com/widget?id=413598358738042890&theme=dark"
         },
         {
-			"id": 1,
+			"id": 2,
             "kind": "reddit",
             "name": "Tribes Subreddit",
             "sub": "tribes"
