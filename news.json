@@ -24,7 +24,24 @@
 			"id": 0,
             "kind": "discord",
             "name": "Australian Tribes Discord",
-            "serverId": "413598358738042890"
+            "serverId": "413598358738042890",
+			"pugOrgChannels": ["413598358738042895", "427387468854198273", "435440179554156554", "435040441197395988", "432786817125711872"],
+			"gameChannels": [
+				{
+					"be": "413602047565365248",
+					"ds": "413602086945554444"
+				},
+				{
+					"be": "439026531117957140",
+					"ds": "439026582535929866"
+				}
+			]
+        },
+		{
+			"id": 0,
+            "kind": "iframe",
+            "name": "Australian Tribes Discord <iframe>",
+            "url": "https://discordapp.com/widget?id=413598358738042890&theme=dark"
         },
         {
 			"id": 1,
