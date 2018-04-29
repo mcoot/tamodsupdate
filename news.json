@@ -1,10 +1,22 @@
 {
     "news": [
-        {
+		{
 			"id": 0,
+            "title": "Test News Item 2",
+            "date": "29th April, 2018",
+            "body": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin nec dolor at pretium. Vestibulum consequat erat eu hendrerit volutpat. Donec gravida volutpat purus vitae mollis. In sed justo ut nisl faucibus porta. Integer id lorem a nulla interdum iaculis. Nullam nec porttitor neque, a gravida dolor. Sed augue elit, suscipit eget sodales et, consequat id ex. Aliquam dignissim nisl dapibus eros tempus, a finibus augue aliquam. Aliquam eleifend pretium odio vitae iaculis. Sed lacinia, lectus ac consectetur tincidunt, lorem leo dictum diam, at molestie enim nulla vitae augue. Vestibulum accumsan quis dolor nec elementum. Praesent lobortis dui imperdiet, cursus dui ac, viverra tellus. \n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nisl nisi, scelerisque ac efficitur ac, tempus at eros. Donec vitae arcu condimentum, fermentum justo non, euismod lectus. Fusce fringilla elit eu neque scelerisque, eu malesuada ipsum scelerisque. Praesent a massa metus. Phasellus id elit faucibus dolor vulputate sollicitudin sit amet quis mauris. Vestibulum est magna, dignissim tempus felis sed, tempor maximus orci. Aliquam erat volutpat. Ut imperdiet posuere hendrerit. Pellentesque ac ultricies felis, sed molestie magna. Suspendisse quis lectus ut mauris convallis porta vitae sed lacus. Aenean et sem porttitor quam feugiat semper id eu nibh. Curabitur aliquam elementum nibh, in ultrices ante euismod non. Ut volutpat bibendum convallis. "
+        },
+		{
+			"id": 1,
+            "title": "Test News Item",
+            "date": "29th April, 2018",
+            "body": "Some *beautiful* body text, available in 7 strong flavours."
+        },
+        {
+			"id": 2,
             "title": "TribesLauncher Alpha Testing",
             "date": "22nd April, 2018",
-            "body": "The TribesLauncher client has hit alpha! There's still a _lot_ of development work to go, but it is now able to perform the basic functionality of updating and injecting TAMods.\n\n- mcoot"
+            "body": "The TribesLauncher client has hit alpha! There's still a _lot_ of development work to go, but it is now able to perform the basic functionality of updating and injecting TAMods.\n\n\- mcoot"
         }
     ],
     "community": [
