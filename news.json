@@ -39,5 +39,15 @@
             "name": "Tribes Subreddit",
             "sub": "tribes"
         }
-    ]
+    ],
+	"iniPresets": [
+		{
+			"name": "testing",
+			"remotePath": "inis/test.ini"
+		},
+		{
+			"name": "testing2",
+			"remotePath": "inis/test2.ini"
+		}
+	]
 }
