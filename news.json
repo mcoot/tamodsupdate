@@ -43,10 +43,20 @@
 	"iniPresets": [
 		{
 			"name": "testing",
+			"graphics": "high",
+			"description": "This a good ini",
 			"remotePath": "inis/test.ini"
 		},
 		{
 			"name": "testing2",
+			"graphics": "low",
+			"description": "This also a good ini",
+			"remotePath": "inis/test2.ini"
+		},
+		{
+			"name": "testing3",
+			"graphics": "medium",
+			"description": "This a bad ini :<",
 			"remotePath": "inis/test2.ini"
 		}
 	]
