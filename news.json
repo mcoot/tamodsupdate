@@ -1,24 +1,12 @@
 {
-	"latestLauncherVersion": "0.3.0",
+	"latestLauncherVersion": "1.0.0",
 	"launcherUpdateLink": "https://github.com/mcoot/TribesLauncher/releases", 
     "news": [
 		{
 			"id": 0,
-            "title": "Beta v0.3.0",
-            "date": "27th May, 2018",
-            "body": "A new beta, v0.3.0, is now available. It includes a few bugfixes and minor UX tweaks. No further new features will be added before launch, so please submit any bug reports ASAP!"
-        },
-		{
-			"id": 1,
-            "title": "Beta v0.2.0",
-            "date": "13th May, 2018",
-            "body": "An updated beta, v0.2.0, is now available. New features:\n* 'Launch via Steam' option (enabled by default), which should allow use of the Steam Overlay when T:A is launched via the launcher\n* Auto-inject option to automatically inject TAMods on a timer after the game is launched\n* Community Reddit integration"
-        },
-        {
-			"id": 2,
-            "title": "TribesLauncher Beta",
-            "date": "6th May, 2018",
-            "body": "The TribesLauncher client is ready for beta. There's still some functionality to add, and many bugs to iron out. If you find a bug, let me know on Discord. Also hit me up if something doesn't work like you expect, or there's a feature you think is missing."
+            "title": "TribesLauncher v1.0.0 release",
+            "date": "2nd June, 2018",
+            "body": "Welcome to the new TribesLauncher! This version is the first stable release; if you encounter issues or have feedback, see the contact information in the Info dialogue."
         }
     ],
     "community": [
