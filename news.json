@@ -1,9 +1,15 @@
 {
-	"latestLauncherVersion": "1.0.0",
+	"latestLauncherVersion": "1.0.1",
 	"launcherUpdateLink": "https://github.com/mcoot/TribesLauncher/releases", 
     "news": [
 		{
 			"id": 0,
+            "title": "Update v1.0.1",
+            "date": "14th June, 2018",
+            "body": "This version brings minor bugfixes, and buttons in the Configure T:A dialog for access to your Tribes configuration directory, and the TAMods install directory."
+        },
+		{
+			"id": 1,
             "title": "TribesLauncher v1.0.0 release",
             "date": "2nd June, 2018",
             "body": "Welcome to the new TribesLauncher! This version is the first stable release; if you encounter issues or have feedback, see the contact information in the Info dialogue."
