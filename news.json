@@ -1,7 +1,7 @@
 {
 	"latestLauncherVersion": "1.0.1",
 	"launcherUpdateLink": "https://github.com/mcoot/TribesLauncher/releases", 
-    "news": 
+    "news": [
         {
 			"id": 0,
             "title": "TAMods v0.7",
