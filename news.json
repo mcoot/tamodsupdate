@@ -1,6 +1,15 @@
 {
 	"latestLauncherVersion": "1.0.1",
-	"launcherUpdateLink": "https://github.com/mcoot/TribesLauncher/releases", 
+	"launcherUpdateLink": "https://github.com/mcoot/TribesLauncher/releases",
+	"hirezMasterServerHost": "23.239.17.171",
+	"primaryCustomMasterServerHost": "",
+	"shouldDefaultToHirezMasterServer": true,
+    "alternateMasterServerHosts": [
+        {
+			"name": "Localhost",
+			"host": "127.0.0.1"
+        }
+	],
     "news": [
         {
 			"id": 0,
