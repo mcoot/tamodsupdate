@@ -1,5 +1,5 @@
 {
-	"latestLauncherVersion": "1.0.1",
+	"latestLauncherVersion": "1.0.2",
 	"launcherUpdateLink": "https://github.com/mcoot/TribesLauncher/releases",
 	"masterServers": {
 		"hirezMasterServerHost": "23.239.17.171",
@@ -13,20 +13,26 @@
 		]
 	},
     "news": [
-        {
+		{
 			"id": 0,
+            "title": "Update v1.0.2",
+            "date": "28th July, 2018",
+            "body": "This TribesLauncher update brings improvements to the login server system preventing issues after T:A server maintenance, as well as custom login server support when launching via steam."
+        },
+        {
+			"id": 1,
             "title": "TAMods v0.7",
             "date": "15th July, 2018",
             "body": "TAMods v0.7 is now available, featuring weapon model switching, stats recording and more! See [here](https://www.tamods.org/blog/2018/07/15/tamods-0.7.html) for more info."
         },
 		{
-			"id": 1,
+			"id": 2,
             "title": "Update v1.0.1",
             "date": "14th June, 2018",
             "body": "This version brings minor bugfixes, and buttons in the Configure T:A dialog for access to your Tribes configuration directory, and the TAMods install directory."
         },
 		{
-			"id": 2,
+			"id": 3,
             "title": "TribesLauncher v1.0.0 release",
             "date": "2nd June, 2018",
             "body": "Welcome to the new TribesLauncher! This version is the first stable release; if you encounter issues or have feedback, see the contact information in the Info dialogue."
