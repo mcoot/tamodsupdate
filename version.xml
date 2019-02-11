@@ -72,7 +72,7 @@
 		<file version="0.6">!CONFIG/examples/sounds/kill-ta.wav</file>
 		<file version="0.65">!CONFIG/lib/geometry.lua</file>
 		<file version="0.65">!CONFIG/lib/kpairs.lua</file>
-		<file version="0.65">!CONFIG/lib/menu.lua</file>
+		<file version="0.66">!CONFIG/lib/menu.lua</file>
 		<file version="0.65">!CONFIG/lib/wrapline.lua</file>
 		<file version="0.65">!CONFIG/lib/xhair_factory.lua</file>
 		<file version="0.65">!CONFIG/presets/EyestrainHUD/description.txt</file>
@@ -215,7 +215,7 @@
 		<file version="0.65">!CONFIG/presets/tomatoHud/hud/widgets/speed_bar.lua</file>
 		<file version="0.65">!CONFIG/presets/tomatoHud/hud/widgets/vehicle_health_energy.lua</file>
 		<file version="0.65">!CONFIG/presets/tomatoHud/hud/widgets/weapon_list.lua</file>
-		<file version="0.7">!CONFIG/presets/ubermenu/preset.lua</file>
+		<file version="0.71">!CONFIG/presets/ubermenu/preset.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/config/config.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/config/presets.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/Basic_Bar_Ammo.lua</file>
@@ -277,11 +277,14 @@
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqRageIndicator.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqRespawnTime.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqScoreboard.lua</file>
+		<file version="1.0">!CONFIG/presets/ubermenu/hudmodules/sqShieldInficator.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqStats.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqStopwatch.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqTeamScores.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqVehicle.lua</file>
 		<file version="0.652">!CONFIG/presets/ubermenu/menus/hudmodules.lua</file>
+		<file version="1.0">!CONFIG/presets/ubermenu/menus/keybinds.lua</file>
+		<file version="1.0">!CONFIG/presets/ubermenu/menus/goty_srv.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/menus/players.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/menus/presets.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/menus/roammap.lua</file>

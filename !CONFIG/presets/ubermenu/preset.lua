@@ -9,48 +9,36 @@ function file_exists(name)
 	if f ~= nil then io.close(f) return true else return false end
 end
 
+ubermenu = {}
+ubermenu.opts = {}
+
 if file_exists(config.getPath() .. preset .. "config/config.lua") then
 	require(preset .. "config/config")
 end
 
-bindKey("F1",                Input.PRESSED,  function() ubermenu:toggle() end)
-bindKey("Up",                Input.PRESSED,  function() ubermenu:go_prev() end)
-bindKey("Down",              Input.PRESSED,  function() ubermenu:go_next() end)
-bindKey("Up",                Input.REPEAT,   function() ubermenu:go_prev() end)
-bindKey("Down",              Input.REPEAT,   function() ubermenu:go_next() end)
-bindKey("Left",              Input.PRESSED,  function() ubermenu:go_parent() end)
-bindKey("Right",             Input.PRESSED,  function() ubermenu:go_enter() end)
-bindKey("MouseScrollUp",     Input.PRESSED,  function() ubermenu:increment_var() end)
-bindKey("MouseScrollDown",   Input.PRESSED,  function() ubermenu:decrement_var() end)
-bindKey("MiddleMouseButton", Input.PRESSED,  function() ubermenu:reset_var() end)
-
 -- Set parameters for menu creation
-params = { title = "Ubermenu", config = preset .. "config/config.lua" }
-
--- Load saved style settings
-if ubermenu ~= nil and ubermenu.opts ~= nil then
-	for k,v in pairs(ubermenu.opts) do
-		params[k] = v
-	end
-end
+local params = { title = "Ubermenu", config = preset ..  "config/config.lua", opts = ubermenu.opts }
 
 -- Create our main menu
 ubermenu = menu.create(params)
 params = nil
 
 if ubermenu.opts.help ~= false then
-	ubermenu:add_item({ title = "Help", description = "F1: Toggle Menu\n"
-	                                               .. "Arrow Keys: Menu navigation\n"
-	                                               .. "Mousewheel Up: Increase value\n"
-	                                               .. "Mousewheel Down: Decrease value\n"
-	                                               .. "Middle Mouse Button: Reset variable to its default value\n \n"
-	                                               .. "Pressing Right Arrow Key on a variable will open the\nconsole for setting its value" })
+	ubermenu:add_item({ title = "Help",
+		description = ubermenu.opts.key_menu_toggle    .. ": Toggle Menu\n"
+		           .. ubermenu.opts.key_menu_prev      .. ": Go up\n"
+		           .. ubermenu.opts.key_menu_next      .. ": Go down\n"
+		           .. ubermenu.opts.key_menu_parent    .. ": Go back\n"
+		           .. ubermenu.opts.key_menu_enter     .. ": Enter sub-menu or set variable via console\n"
+		           .. ubermenu.opts.key_menu_inc_var   .. ": Increase value\n"
+		           .. ubermenu.opts.key_menu_dec_var   .. ": Decrease value\n"
+		           .. ubermenu.opts.key_menu_reset_var .. ": Reset variable to its default value\n" })
 	ubermenu:add_separator({})
 end
 
 require(preset .. "menus/xhairs")
-require(preset .. "menus/modelprojectilereplacement")
 require(preset .. "menus/hudmodules")
+require(preset .. "menus/modelprojectilereplacement")
 ubermenu:add_separator({})
 
 require(preset .. "menus/stopwatch")
@@ -58,6 +46,7 @@ require(preset .. "menus/routes")
 require(preset .. "menus/roammap")
 require(preset .. "menus/players")
 require(preset .. "menus/sc")
+require(preset .. "menus/goty_srv")
 
 gamemenu = ubermenu:add_submenu({ title = "Games" })
 require(preset .. "menus/snake")
@@ -87,6 +76,7 @@ local sub = ubermenu:add_submenu({ title = "Menu Settings" })
 	sub:add_variable({ title = "Display Main Menu Help", varname = "ubermenu.opts.help", default = true })
 
 require(preset .. "menus/tamods")
+require(preset .. "menus/keybinds")
 require(preset .. "menus/presets")
 
 ubermenu:add_separator({})

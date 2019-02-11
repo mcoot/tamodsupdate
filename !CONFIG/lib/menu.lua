@@ -26,24 +26,34 @@ function menu.__make(params, parent, root)
 		m.parent = m       -- Root is its own parent
 		m.root = m         -- Roots root is itself
 		m.isvisible = false
+		m.keyprompt = false
 		-- Menu options
-		m.opts = {}
-		m.opts.help         = params.help
-		m.opts.x            = params.x            or 150
-		m.opts.y            = params.y            or 100
-		m.opts.item_width   = params.item_width   or 300
-		m.opts.item_height  = params.item_heigth  or 25
-		m.opts.item_padding = params.item_padding or 1
-		m.opts.desc_x       = params.desc_x       or 0
-		m.opts.desc_y       = params.desc_y       or 0
-		m.opts.fg           = params.fg           or rgba(255,255,255,200)
-		m.opts.fg_var       = params.fg_var       or rgba(255,200,0,255)
-		m.opts.bg           = params.bg           or rgba(0,0,0,120)
-		m.opts.fg_sel       = params.fg_sel       or rgb(0,0,0)
-		m.opts.bg_sel       = params.bg_sel       or rgba(255,225,130,255)
-		m.opts.fg_header    = params.fg_header    or rgba(255,255,255, 200)
-		m.opts.bg_header    = params.bg_header    or rgba(0,0,0,185)
-		m.opts.fg_sep       = params.fg_sep       or rgba(255,255,255,220)
+		m.opts = params.opts or {}
+		if not params.opts then params.opts = {} end
+		m.opts.help               = params.opts.help               or true
+		m.opts.x                  = params.opts.x                  or 150
+		m.opts.y                  = params.opts.y                  or 100
+		m.opts.item_width         = params.opts.item_width         or 300
+		m.opts.item_height        = params.opts.item_heigth        or 25
+		m.opts.item_padding       = params.opts.item_padding       or 1
+		m.opts.desc_x             = params.opts.desc_x             or 0
+		m.opts.desc_y             = params.opts.desc_y             or 0
+		m.opts.fg                 = params.opts.fg                 or rgba(255,255,255,200)
+		m.opts.fg_var             = params.opts.fg_var             or rgba(255,200,0,255)
+		m.opts.bg                 = params.opts.bg                 or rgba(0,0,0,120)
+		m.opts.fg_sel             = params.opts.fg_sel             or rgb(0,0,0)
+		m.opts.bg_sel             = params.opts.bg_sel             or rgba(255,225,130,255)
+		m.opts.fg_header          = params.opts.fg_header          or rgba(255,255,255, 200)
+		m.opts.bg_header          = params.opts.bg_header          or rgba(0,0,0,185)
+		m.opts.fg_sep             = params.opts.fg_sep             or rgba(255,255,255,220)
+		m.opts.key_menu_toggle    = params.opts.key_menu_toggle    or "F1"
+		m.opts.key_menu_prev      = params.opts.key_menu_prev      or "Up"
+		m.opts.key_menu_next      = params.opts.key_menu_next      or "Down"
+		m.opts.key_menu_parent    = params.opts.key_menu_parent    or "Left"
+		m.opts.key_menu_enter     = params.opts.key_menu_enter     or "Right"
+		m.opts.key_menu_inc_var   = params.opts.key_menu_inc_var   or "MouseScrollUp"
+		m.opts.key_menu_dec_var   = params.opts.key_menu_dec_var   or "MouseScrollDown"
+		m.opts.key_menu_reset_var = params.opts.key_menu_reset_var or "MiddleMouseButton"
 	end
 
 	return m  -- Return this menu
@@ -85,7 +95,7 @@ function menu:__recursive_write_vars(menu, tlookup)
 			local val = self:get_var(v.varname)
 			local str
 
-			if v.subtype == nil then
+			if (v.subtype == nil or v.subtype == "keybind") then
 
 				if type(val) == "string" then
 					str = "\"" .. val .. "\""
@@ -352,6 +362,7 @@ function menu:go_enter()
 	-- TODO: find first non sep when entering. Only do that when there are
 	-- items and more than 1 if the current is a separator, ezpz
 	if self.root.isvisible then
+		local title = self.root.title or "Menu"
 		local m = self.root.current_submenu
 		local selected = m:get_selected_item()
 
@@ -372,6 +383,10 @@ function menu:go_enter()
 				local var = self:get_var(m.varname)
 				local str = string.format("/lua %s = Vector(%s, %s, %s)", m.varname:gsub("[.]([%d]+)", "[%1]"), var.x, var.y, var.z)
 				openConsole(str)
+			elseif selected.subtype == "keybind" then
+				notify(title, "Press any key")
+				self.root.keyprompt = true
+				return
 			else
 				local var = self:get_var(selected.varname)
 				local vartype = type(var)
@@ -512,6 +527,11 @@ function menu:add_variable(params)
 	t.varname = params.varname  -- Name of the attached variable
 	t.func    = params.func     -- Function to run
 
+	if (t.subtype == "keybind") then
+		t.dorepeat = params.dorepeat
+		t.call     = params.call
+	end
+
 	-- Set the attached variable if a value is provided
 	if params.value ~= nil then
 		self:set_var(params.varname, params.value)
@@ -529,6 +549,19 @@ function menu:add_variable(params)
 		-- Add at position
 		table.insert(self.items, params.position, t)
 	end
+end
+
+function menu:add_keybind(params)
+	-- A keybind
+	if (params.default ~= nil and params.default ~= "" and type(params.call) == "function") then
+		bindKey(params.default, Input.PRESSED, params.call)
+		if (params.dorepeat) then
+			bindKey(params.default, Input.REPEAT, params.call)
+		end
+	end
+
+	params.subtype = "keybind"
+	self:add_variable(params)
 end
 
 function menu:add_color(params)
