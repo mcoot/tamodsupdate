@@ -277,7 +277,7 @@
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqRageIndicator.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqRespawnTime.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqScoreboard.lua</file>
-		<file version="1.0">!CONFIG/presets/ubermenu/hudmodules/sqShieldInficator.lua</file>
+		<file version="1.0">!CONFIG/presets/ubermenu/hudmodules/sqShieldIndicator.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqStats.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqStopwatch.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqTeamScores.lua</file>
