@@ -9,6 +9,9 @@
 
 file="version.xml"
 
+# skip checks if $file is not staged for commit
+git diff --name-only --cached | grep -q "^${file}$" || exit 0
+
 set -e
 exec 1>&2
 
