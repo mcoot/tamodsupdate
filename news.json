@@ -3,7 +3,7 @@
 	"launcherUpdateLink": "https://github.com/mcoot/TribesLauncher/releases",
 	"masterServers": {
 		"hirezMasterServerHost": "23.239.17.171",
-		"unofficialMasterServerHost": "",
+		"unofficialMasterServerHost": "ta.kfk4ever.com",
 		"shouldDefaultToHirezMasterServer": true,
 		"alternateMasterServerHosts": [
 			{
