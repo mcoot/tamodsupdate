@@ -1,8 +1,8 @@
 <TAMods>
 	<files channel="stable">
-		<file version="1.011">TAMods.dll</file>
-        <file version="1.011">TAMods-beta.dll</file>
-        <file version="1.011">TAMods-edge.dll</file>
+		<file version="1.02">TAMods.dll</file>
+        <file version="1.02">TAMods-beta.dll</file>
+        <file version="1.02">TAMods-edge.dll</file>
         <file version="1">!CONFIG/lib/dmybmp.txt</file>
 		<file version="0.65">!CONFIG/examples/basic_damage_numbers.lua</file>
 		<file version="0.65">!CONFIG/examples/custom_projectiles.lua</file>
