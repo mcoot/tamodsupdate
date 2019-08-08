@@ -68,6 +68,7 @@ function module.draw(res_x, res_y)
 	drawSmallText(kills .. "k " .. player.deaths() .. "d " .. player.assists() .. "a", module.opts.Text, xpos, ypos + 32, module.opts.Text_Alignment, 1, 1)
 	drawSmallText(counter.blueplates .. " bp " .. counter.airmails .. " am", module.opts.Text, xpos, ypos + 48, module.opts.Text_Alignment, 1, 1)
 	drawSmallText("streak: " .. counter.streak, module.opts.Text, xpos, ypos + 64, module.opts.Text_Alignment, 1, 1)
+    drawSmallText("credits: " .. player.credits(), module.opts.Text, xpos, ypos + 80, module.opts.Text_Alignment, 1, 1)
 end
 
 return module
