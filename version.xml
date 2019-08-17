@@ -262,6 +262,7 @@
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/potatoHealthEnergy.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/potatoKillBox.lua</file>
 		<file version="0.651">!CONFIG/presets/ubermenu/hudmodules/potatoWeaponBar.lua</file>
+		<file version="1.12">!CONFIG/presets/ubermenu/hudmodules/senexsCredits.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/Spectator_List.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqAmmoBar.lua</file>
 		<file version="0.65">!CONFIG/presets/ubermenu/hudmodules/sqArenaLastLive.lua</file>
