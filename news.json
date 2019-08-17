@@ -1,6 +1,6 @@
 {
 	"latestLauncherVersion": "2.0.0",
-    "latestLauncherSharpVersion": "1.1.0.0",
+    "latestLauncherSharpVersion": "1.1.1.0",
 	"launcherUpdateLink": "https://github.com/mcoot/TribesLauncherSharp/releases",
 	"masterServers": {
 		"hirezMasterServerHost": "23.239.17.171",
