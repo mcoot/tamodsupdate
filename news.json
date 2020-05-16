@@ -3,7 +3,7 @@
     "latestLauncherSharpVersion": "1.1.1.0",
 	"launcherUpdateLink": "https://github.com/mcoot/TribesLauncherSharp/releases",
 	"masterServers": {
-		"hirezMasterServerHost": "23.239.17.171",
+		"hirezMasterServerHost": "45.79.222.67",
 		"unofficialMasterServerHost": "ta.kfk4ever.com",
 		"shouldDefaultToHirezMasterServer": true,
 		"alternateMasterServerHosts": [
