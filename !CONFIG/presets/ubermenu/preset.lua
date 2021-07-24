@@ -46,7 +46,7 @@ require(preset .. "menus/routes")
 require(preset .. "menus/roammap")
 require(preset .. "menus/players")
 require(preset .. "menus/sc")
-require(preset .. "menus/goty_srv")
+require(preset .. "menus/srvcmd")
 
 gamemenu = ubermenu:add_submenu({ title = "Games" })
 require(preset .. "menus/snake")
